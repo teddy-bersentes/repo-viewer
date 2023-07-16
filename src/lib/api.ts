@@ -12,7 +12,7 @@ export const queryClient = new QueryClient({
 })
 
 export const getRepositories = async (): Promise<GithubResponse<Repository>> => {
-	const response = await fetch('https://api.github.com/search/repositories?q=stars:%3E1&sort=stars&order=desc')
+	const response = await fetch('https://api.github.com/search/repositories?q=stars:%3E1&sort=stars&order=desc&per_page=100')
 	const data = await response.json()
 	return data
 }
