@@ -1,38 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Repo Viewer
 
-## Getting Started
+### Introduction
 
-First, run the development server:
+This document provides a detailed overview of my solution to the given frontend web coding challenge. The task involved creating a single-page web application that uses the GitHub REST API to display a list of the top 100 most starred GitHub repositories and a list of the commits made in the last 24 hours. I built the site in approximately 4 hours total, trying to allocate a realistic amount of time for the features and the code as though it were a real-life product I was building. The application's UI was designed by myself with inspiration from [shadcnui](https://ui.shadcn.com/) and GitHub's native design.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Next.js**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+I chose to use Next.js as the primary framework due to its ease of hosting and the range of useful components it offers, such as Image and Link. While I didn’t use anything especially unique or powerful to Next.js, it’s still an excellent choice for making a quick React applications without much overhead.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+**TailwindCSS & Headless UI**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+For the application's styling, I used TailwindCSS and Headless UI. TailwindCSS is efficient and straightforward, allowing for easy writing, maintenance, and organization of styling within the code. It was made to work with component frameworks and css-in-js tools like [clsx](https://github.com/lukeed/clsx), working very well with the separation of concerns and re-usability in components.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**React Query**
 
-## Learn More
+For state management and data fetching, I used react-query. This was not only in alignment with the internal tools used by the team but also an excellent choice due to its efficient handling of re-validation, cache-control, and fetching logic with minimal lines of code.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Overall, I am pleased with the solution I made and the technologies I used. I am excited to discuss my solution and answer any questions you may have!
